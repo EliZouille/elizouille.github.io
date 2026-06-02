@@ -1,0 +1,622 @@
+<div class="page-wrap proj-detail-wrap">
+
+  <!-- ── RETOUR ────────────────────────────────────────────────────── -->
+  <div class="proj-detail-back">
+    <button class="btn btn-outline btn-sm" onclick="history.pushState({page:'projets'},'','#projets'); loadPage('projets')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Retour aux projets
+    </button>
+  </div>
+
+  <!-- ── HERO ─────────────────────────────────────────────────────── -->
+  <div class="proj-detail-hero">
+    <div class="proj-detail-hero-top">
+      <div class="proj-detail-tags">
+        <span class="ptag">C#</span>
+        <span class="ptag">WPF</span>
+        <span class="ptag">.NET 8</span>
+        <span class="ptag">XAML</span>
+        <span class="ptag">WMI</span>
+        <span class="ptag">Inno Setup</span>
+      </div>
+      <span class="proj-detail-year">2025 — 2026</span>
+    </div>
+    <h1 class="proj-detail-title">Kiosk <span>Easy Cash</span></h1>
+    <p class="proj-detail-subtitle">Logiciel d'affichage automatique des caractéristiques techniques</p>
+    <p class="proj-detail-desc">
+      Logiciel WPF développé pour les magasins Easy Cash, permettant d'afficher automatiquement
+      les caractéristiques matérielles des ordinateurs destinés à la vente (CPU, GPU, RAM, stockage,
+      écran, système). Conçu pour fonctionner en mode kiosk plein écran, il supprime toute saisie
+      manuelle, améliore la présentation produit en magasin et facilite le travail des employés.
+      Déployable sur n'importe quel PC via un installateur dédié.
+    </p>
+    <div class="proj-detail-meta-row">
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        2025 — 2026
+      </div>
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        Projet individuel — Stage
+      </div>
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        BTS SIO — SLAM
+      </div>
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Application bureautique Windows
+      </div>
+    </div>
+  </div>
+
+  <!-- ── APERÇU ────────────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Aperçu de l'application</h2>
+
+  <!-- Screen principal pleine largeur -->
+  <div class="proj-screen proj-screen--wide" style="margin-bottom:1rem">
+    <div class="proj-screen-bar">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">Easy Cash Kiosk — Fiche produit (plein écran)</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Maquette SVG de la fenêtre principale -->
+    <div style="background:#F0F2F5; padding: 0; font-family: sans-serif; overflow: hidden;">
+
+      <!-- Header -->
+      <div style="display:flex; align-items:stretch; background:white; border-bottom:1px solid #E4E8EF;">
+        <div style="background:#E2001A; padding:14px 24px; display:flex; align-items:center; min-width:180px;">
+          <span style="color:white; font-weight:900; font-size:15px; letter-spacing:1px;">EASY CASH ✦</span>
+        </div>
+        <div style="display:flex; align-items:center; padding:0 20px; gap:12px; flex:1;">
+          <span style="font-weight:600; font-size:14px; color:#1A1D27;">Fiche produit</span>
+          <span style="background:#EDFBF3; border-radius:20px; padding:3px 10px; font-size:10px; font-weight:600; color:#16A34A; display:flex; align-items:center; gap:4px;">
+            <span style="width:6px;height:6px;background:#22C55E;border-radius:50%;display:inline-block;"></span>Disponible
+          </span>
+        </div>
+        <div style="padding:0 24px; display:flex; flex-direction:column; justify-content:center; align-items:flex-end;">
+          <span style="font-weight:900; font-size:22px; color:#1A1D27; line-height:1;">18:42</span>
+          <span style="font-size:10px; color:#A0AABF;">lundi 1 juin 2026</span>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div style="display:flex; padding:20px 28px; gap:24px; min-height:340px;">
+
+        <!-- Colonne specs -->
+        <div style="flex:2.2; display:flex; flex-direction:column; gap:0;">
+          <span style="font-size:11px; font-weight:600; color:#A0AABF; margin-bottom:12px; display:block;">Caractéristiques</span>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+
+            <!-- CPU -->
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:14px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <div style="background:#FFF0F2; width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:14px;">⚙️</div>
+                <span style="font-size:10px; font-weight:600; color:#A0AABF;">Processeur</span>
+              </div>
+              <span style="font-size:12px; font-weight:700; color:#1A1D27;">12th Gen Intel Core i5-12450H</span>
+            </div>
+
+            <!-- GPU -->
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:14px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <div style="background:#F0F0FF; width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:14px;">🎮</div>
+                <span style="font-size:10px; font-weight:600; color:#A0AABF;">Carte graphique</span>
+              </div>
+              <span style="font-size:12px; font-weight:700; color:#1A1D27;">NVIDIA GeForce RTX 4060</span>
+            </div>
+
+            <!-- RAM -->
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:14px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <div style="background:#F0FFF4; width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:14px;">💾</div>
+                <span style="font-size:10px; font-weight:600; color:#A0AABF;">RAM</span>
+              </div>
+              <span style="font-size:12px; font-weight:700; color:#1A1D27;">16 Go DDR5 (4800 MHz)</span>
+            </div>
+
+            <!-- SSD -->
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:14px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <div style="background:#FFFBF0; width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:14px;">💿</div>
+                <span style="font-size:10px; font-weight:600; color:#A0AABF;">Stockage</span>
+              </div>
+              <span style="font-size:12px; font-weight:700; color:#1A1D27;">SSD NVMe — 476 Go</span>
+            </div>
+
+            <!-- Écran -->
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:14px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <div style="background:#F0F8FF; width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:14px;">🖥️</div>
+                <span style="font-size:10px; font-weight:600; color:#A0AABF;">Écran</span>
+              </div>
+              <span style="font-size:12px; font-weight:700; color:#1A1D27;">1920×1080 Full HD</span>
+            </div>
+
+            <!-- Windows -->
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:14px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                <div style="background:#F5F0FF; width:30px; height:30px; border-radius:7px; display:flex; align-items:center; justify-content:center; font-size:14px;">🪟</div>
+                <span style="font-size:10px; font-weight:600; color:#A0AABF;">Système</span>
+              </div>
+              <span style="font-size:12px; font-weight:700; color:#1A1D27;">Microsoft Windows 11 Famille</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div style="flex:1.3; display:flex; flex-direction:column; gap:10px;">
+
+          <!-- Prix -->
+          <div style="background:#E2001A; border-radius:14px; padding:20px 22px; position:relative; overflow:hidden;">
+            <div style="position:absolute; width:120px; height:120px; background:#CC0016; border-radius:50%; right:-30px; top:-40px; opacity:.5;"></div>
+            <div style="position:absolute; width:70px; height:70px; background:#CC0016; border-radius:50%; left:-20px; bottom:-20px; opacity:.3;"></div>
+            <div style="position:relative;">
+              <span style="font-size:10px; font-weight:700; color:#FFB3BC; display:block; margin-bottom:4px;">PRIX DE VENTE</span>
+              <div style="display:flex; align-items:flex-start;">
+                <span style="font-size:54px; font-weight:900; color:white; line-height:1;">700€</span>
+                <span style="font-size:22px; font-weight:700; color:white; margin-top:8px;">,00</span>
+              </div>
+              <span style="background:#B0001B; border-radius:20px; padding:4px 10px; font-size:10px; font-weight:600; color:white; display:inline-block; margin-top:8px;">✓ Testé &amp; vérifié</span>
+            </div>
+          </div>
+
+          <!-- Description hover -->
+          <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:16px; flex:1;">
+            <span style="font-size:10px; font-weight:600; color:#A0AABF; display:block; margin-bottom:8px;">Détails</span>
+            <span style="font-size:12px; color:#3A4055; line-height:1.7;">
+              Stockage SSD NVMe — technologie de pointe offrant des vitesses de lecture jusqu'à 3 500 Mo/s. Démarrage du système en moins de 10 secondes, chargement des applications quasi instantané...
+            </span>
+          </div>
+
+          <!-- Logos garanties -->
+          <div style="background:white; border:1px solid #E4E8EF; border-radius:12px; padding:10px 12px;">
+            <span style="font-size:10px; font-weight:600; color:#A0AABF; display:block; margin-bottom:8px;">Nos garanties</span>
+            <div style="display:flex; flex-wrap:wrap; gap:4px;">
+              <div style="width:36px; height:36px; background:#FFF0F2; border-radius:50%; border:2px solid #E2001A; display:flex; align-items:center; justify-content:center; font-size:8px; font-weight:700; color:#E2001A; text-align:center; line-height:1.1;">2<br>ANS</div>
+              <div style="width:36px; height:36px; background:#FFF0F2; border-radius:50%; border:2px solid #E2001A; display:flex; align-items:center; justify-content:center; font-size:7px; font-weight:700; color:#E2001A; text-align:center; line-height:1.1;">PRIX<br>↓</div>
+              <div style="width:36px; height:36px; background:#FFF0F2; border-radius:50%; border:2px solid #E2001A; display:flex; align-items:center; justify-content:center; font-size:7px; font-weight:700; color:#E2001A; text-align:center; line-height:1.1;">✓<br>TEST</div>
+              <div style="width:36px; height:36px; background:#FFF0F2; border-radius:50%; border:2px solid #E2001A; display:flex; align-items:center; justify-content:center; font-size:7px; font-weight:700; color:#E2001A; text-align:center; line-height:1.1;">SAV</div>
+              <div style="width:36px; height:36px; background:#FFF0F2; border-radius:50%; border:2px solid #E2001A; display:flex; align-items:center; justify-content:center; font-size:7px; font-weight:700; color:#E2001A; text-align:center; line-height:1.1;">CASH</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div style="background:white; border-top:1px solid #E4E8EF; padding:8px 28px; display:flex; justify-content:space-between; align-items:center;">
+        <span style="font-size:10px; color:#6B7280;">● Demandez conseil à notre équipe en magasin</span>
+        <span style="font-size:10px; color:#D1D5DB;">Ctrl+P</span>
+      </div>
+    </div>
+
+    <div class="mock-label">Fenêtre principale — Plein écran, détection matérielle automatique, hover sur un composant</div>
+  </div>
+
+  <!-- Grille screens secondaires -->
+  <div class="proj-screens-grid" style="margin-bottom:2.5rem">
+
+    <!-- Screen : Paramètres -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">Paramètres — accès protégé par code</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:white; font-family:sans-serif; overflow:hidden;">
+        <div style="background:#E2001A; padding:10px 16px;">
+          <span style="color:white; font-weight:700; font-size:12px;">Paramètres</span>
+        </div>
+        <div style="display:flex; padding:14px; gap:14px; font-size:10px;">
+          <div style="flex:1; display:flex; flex-direction:column; gap:6px;">
+            <span style="font-weight:700; color:#A0AABF; font-size:9px;">MATÉRIEL &amp; PRIX</span>
+            <div style="background:#F0F2F5; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#3A4055;">Prix (€) : 700</div>
+            <div style="display:flex; align-items:center; gap:5px;"><input type="checkbox" checked disabled/><span style="color:#3A4055;">Afficher le processeur</span></div>
+            <div style="background:#F0F2F5; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#A0AABF; font-size:9px;">12th Gen Intel Core i5-12450H</div>
+            <div style="display:flex; align-items:center; gap:5px;"><input type="checkbox" checked disabled/><span style="color:#3A4055;">Afficher la carte graphique</span></div>
+            <div style="background:#F0F2F5; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#A0AABF; font-size:9px;">NVIDIA GeForce RTX 4060</div>
+            <span style="font-weight:700; color:#A0AABF; font-size:9px; margin-top:4px;">ACTIONS</span>
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#3A4055;">🖼 Gérer les médias du diaporama</div>
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#3A4055;">🔒 Modifier le code de sécurité</div>
+          </div>
+          <div style="width:1px; background:#E4E8EF;"></div>
+          <div style="flex:1; display:flex; flex-direction:column; gap:6px;">
+            <span style="font-weight:700; color:#A0AABF; font-size:9px;">LOGOS À AFFICHER</span>
+            <div style="display:flex; align-items:center; gap:5px;"><input type="checkbox" checked disabled/><span style="color:#3A4055;">Garantie 2 ans</span></div>
+            <div style="display:flex; align-items:center; gap:5px;"><input type="checkbox" checked disabled/><span style="color:#3A4055;">Prix en baisse</span></div>
+            <div style="display:flex; align-items:center; gap:5px;"><input type="checkbox" checked disabled/><span style="color:#3A4055;">Testé et contrôlé</span></div>
+            <div style="display:flex; align-items:center; gap:5px;"><input type="checkbox" disabled/><span style="color:#A0AABF;">Achat / Vente</span></div>
+            <span style="font-weight:700; color:#A0AABF; font-size:9px; margin-top:4px;">DESCRIPTIONS PERSO</span>
+            <div style="background:#F0F2F5; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#A0AABF; font-size:9px; font-style:italic;">Laissez vide = description auto</div>
+            <div style="display:flex; justify-content:flex-end; gap:6px; margin-top:8px;">
+              <div style="background:#F0F2F5; border-radius:4px; padding:5px 12px; font-size:10px; color:#3A4055;">Réinitialiser</div>
+              <div style="background:#E2001A; border-radius:4px; padding:5px 12px; font-size:10px; color:white; font-weight:600;">Enregistrer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-label">Fenêtre Paramètres — Configuration complète de la fiche produit</div>
+    </div>
+
+    <!-- Screen : Code d'accès -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">Dialogue — Saisie du code de sécurité</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:#F0F2F5; padding:40px 20px; font-family:sans-serif; display:flex; justify-content:center; align-items:center; min-height:180px;">
+        <div style="background:white; border:1px solid #E4E8EF; border-radius:14px; padding:24px; width:220px; text-align:center;">
+          <div style="background:#E2001A; border-radius:8px; padding:4px 12px; display:inline-block; margin-bottom:12px;">
+            <span style="color:white; font-weight:700; font-size:9px; letter-spacing:1px;">ACCÈS RESTREINT</span>
+          </div>
+          <p style="font-size:11px; color:#9AA3B2; margin-bottom:12px;">Entrez le code à 4 chiffres</p>
+          <div style="background:#F0F2F5; border:1px solid #E4E8EF; border-radius:6px; padding:8px; font-size:20px; letter-spacing:10px; color:#1A1D27; margin-bottom:14px;">●●●●</div>
+          <div style="display:flex; gap:6px; justify-content:center;">
+            <div style="background:#E2001A; border-radius:6px; padding:7px 16px; font-size:11px; font-weight:600; color:white;">Valider</div>
+            <div style="background:#F0F2F5; border-radius:6px; padding:7px 16px; font-size:11px; color:#3A4055;">Annuler</div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-label">Dialogue de sécurité — Code requis pour accéder aux paramètres ou fermer</div>
+    </div>
+
+    <!-- Screen : Gestionnaire médias -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">Gestion des médias du diaporama</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:white; font-family:sans-serif; overflow:hidden;">
+        <div style="background:#E2001A; padding:10px 16px;">
+          <span style="color:white; font-weight:700; font-size:12px;">Gestion des médias</span>
+        </div>
+        <div style="display:flex; padding:14px; gap:12px;">
+          <div style="flex:1; background:#F0F2F5; border:1px solid #E4E8EF; border-radius:6px; padding:6px; display:flex; flex-direction:column; gap:4px;">
+            <div style="display:flex; align-items:center; gap:8px; padding:4px 6px; background:white; border-radius:4px;">
+              <div style="width:36px; height:36px; background:#E4E8EF; border-radius:4px; flex-shrink:0;"></div>
+              <div>
+                <div style="font-size:10px; font-weight:600; color:#1A1D27;">promo_ete.jpg</div>
+                <div style="font-size:9px; color:#C0C8D8;">Glisser pour réorganiser</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; padding:4px 6px; background:#FFF0F2; border:1px solid #E2001A; border-radius:4px;">
+              <div style="width:36px; height:36px; background:#FFCDD2; border-radius:4px; flex-shrink:0;"></div>
+              <div>
+                <div style="font-size:10px; font-weight:600; color:#1A1D27;">video_accueil.mp4</div>
+                <div style="font-size:9px; color:#C0C8D8;">Glisser pour réorganiser</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:8px; padding:4px 6px; background:white; border-radius:4px;">
+              <div style="width:36px; height:36px; background:#E4E8EF; border-radius:4px; flex-shrink:0;"></div>
+              <div>
+                <div style="font-size:10px; font-weight:600; color:#1A1D27;">banniere_noel.png</div>
+                <div style="font-size:9px; color:#C0C8D8;">Glisser pour réorganiser</div>
+              </div>
+            </div>
+          </div>
+          <div style="width:100px; display:flex; flex-direction:column; gap:6px; font-size:10px;">
+            <span style="font-weight:700; color:#A0AABF; font-size:9px;">MÉDIAS</span>
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#3A4055;">+ Ajouter</div>
+            <div style="background:white; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#3A4055;">− Supprimer</div>
+            <span style="font-weight:700; color:#A0AABF; font-size:9px; margin-top:4px;">DURÉE</span>
+            <div style="background:#F0F2F5; border:1px solid #E4E8EF; border-radius:4px; padding:5px 8px; color:#3A4055;">8 sec.</div>
+            <div style="background:#E2001A; border-radius:4px; padding:5px 8px; color:white; font-weight:600; text-align:center; margin-top:6px;">Enregistrer</div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-label">Gestionnaire médias — Glisser-déposer pour réordonner, images &amp; vidéos supportées</div>
+    </div>
+
+    <!-- Screen : Diaporama -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">Mode diaporama — après 20 secondes d'inactivité</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:black; min-height:200px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;">
+        <div style="position:absolute; inset:0; background: linear-gradient(135deg, #1a0000 0%, #3d0009 40%, #1a0000 100%);"></div>
+        <div style="position:relative; text-align:center;">
+          <div style="background:#E2001A; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:24px;">▶</div>
+          <span style="color:white; font-weight:700; font-size:13px; display:block;">Diaporama en cours</span>
+          <span style="color:rgba(255,255,255,0.5); font-size:10px;">Images &amp; vidéos — se coupe au moindre mouvement de souris</span>
+        </div>
+      </div>
+      <div class="mock-label">Diaporama — Se lance après 20s d'inactivité, s'arrête au mouvement de souris</div>
+    </div>
+
+  </div>
+
+  <!-- ── FONCTIONNALITÉS ───────────────────────────────────────────── -->
+  <h2 class="subsection-title">Fonctionnalités développées</h2>
+  <div class="proj-features-grid" style="margin-bottom:2.5rem">
+
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-cyan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <div>
+        <h3>Détection matérielle automatique</h3>
+        <p>Lecture du CPU, GPU, RAM, disques, écran et version Windows via <code>WMI</code> (Windows Management Instrumentation). Zéro saisie manuelle requise.</p>
+      </div>
+    </div>
+
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-red">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div>
+        <h3>Mode kiosk sécurisé</h3>
+        <p>Fenêtre plein écran, <code>Topmost</code>, curseur masqué, touche Alt+F4 désactivée. Accès aux paramètres et à la fermeture protégés par un code à 4 chiffres modifiable.</p>
+      </div>
+    </div>
+
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-yellow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+      </div>
+      <div>
+        <h3>Diaporama intelligent</h3>
+        <p>Démarre après 20 secondes d'inactivité. Supporte images et vidéos. Glisser-déposer pour réordonner. S'arrête instantanément au moindre mouvement de souris.</p>
+      </div>
+    </div>
+
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-green">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      </div>
+      <div>
+        <h3>Descriptions contextuelles</h3>
+        <p>Chaque composant génère automatiquement une description professionnelle adaptée au modèle détecté (i3/i5/i7, RTX/GTX, NVMe/SSD, etc.). Personnalisable par article dans les paramètres.</p>
+      </div>
+    </div>
+
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-purple">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+      </div>
+      <div>
+        <h3>Paramétrage complet</h3>
+        <p>Prix, visibilité de chaque composant, description personnalisée, logos de garantie actifs, dossier médias, durée du diaporama — tout configurable sans toucher au code.</p>
+      </div>
+    </div>
+
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-cyan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+      </div>
+      <div>
+        <h3>Déploiement installateur</h3>
+        <p>Publication en exécutable autonome (<code>self-contained .NET 8</code>) + installateur <code>Inno Setup</code> avec démarrage automatique au boot Windows. Zéro dépendance externe.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── STACK ─────────────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Stack technique</h2>
+  <div class="proj-stack-grid" style="margin-bottom:2.5rem">
+
+    <div class="proj-stack-card">
+      <div class="proj-stack-head">Interface</div>
+      <ul class="proj-stack-list">
+        <li><span class="comp-code">WPF</span> Windows Presentation Foundation</li>
+        <li><span class="comp-code">XAML</span> UI déclarative, styles, templates</li>
+        <li><span class="comp-code">Catamaran</span> Police variable intégrée</li>
+        <li><span class="comp-code">SVG inline</span> Logo Easy Cash vectoriel</li>
+      </ul>
+    </div>
+
+    <div class="proj-stack-card">
+      <div class="proj-stack-head">Logique &amp; Données</div>
+      <ul class="proj-stack-list">
+        <li><span class="comp-code">C# 12</span> .NET 8, nullable, pattern matching</li>
+        <li><span class="comp-code">WMI</span> Détection matérielle System.Management</li>
+        <li><span class="comp-code">JSON</span> Persistance des paramètres</li>
+        <li><span class="comp-code">DispatcherTimer</span> Horloge + diaporama</li>
+      </ul>
+    </div>
+
+    <div class="proj-stack-card">
+      <div class="proj-stack-head">Déploiement</div>
+      <ul class="proj-stack-list">
+        <li><span class="comp-code">Publish</span> Self-contained, win-x64</li>
+        <li><span class="comp-code">Inno Setup 6</span> Installateur Windows</li>
+        <li><span class="comp-code">Registry</span> Démarrage automatique</li>
+        <li><span class="comp-code">Topmost</span> Mode kiosk natif Windows</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ── ARCHITECTURE ──────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Architecture du projet</h2>
+  <div class="bdd-schema-wrap" style="margin-bottom:2.5rem">
+    <svg class="bdd-svg" viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="var(--cyan)"/>
+        </marker>
+      </defs>
+
+      <!-- MainWindow -->
+      <g>
+        <rect x="310" y="20" width="240" height="110" rx="8" fill="var(--bg-card)" stroke="var(--cyan)" stroke-width="2"/>
+        <rect x="310" y="20" width="240" height="32" rx="8" fill="var(--cyan-10)"/>
+        <rect x="310" y="36" width="240" height="16" fill="var(--cyan-10)"/>
+        <text x="430" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">MainWindow</text>
+        <line x1="310" y1="52" x2="550" y2="52" stroke="var(--cyan-b)" stroke-width="1"/>
+        <text x="322" y="70" font-size="10" fill="var(--text)" font-family="monospace">Affichage des specs</text>
+        <line x1="310" y1="77" x2="550" y2="77" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="322" y="93" font-size="10" fill="var(--text)" font-family="monospace">Gestion diaporama</text>
+        <line x1="310" y1="100" x2="550" y2="100" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="322" y="116" font-size="10" fill="var(--text)" font-family="monospace">Détails au survol</text>
+      </g>
+
+      <!-- HardwareReader -->
+      <g>
+        <rect x="20" y="20" width="200" height="130" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="20" y="20" width="200" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="20" y="36" width="200" height="16" fill="var(--bg-card2)"/>
+        <text x="120" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">HardwareReader</text>
+        <line x1="20" y1="52" x2="220" y2="52" stroke="var(--border2)" stroke-width="1"/>
+        <text x="32" y="70" font-size="10" fill="var(--text)" font-family="monospace">GetCPU()</text>
+        <line x1="20" y1="77" x2="220" y2="77" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="93" font-size="10" fill="var(--text)" font-family="monospace">GetGPU() / GetRAM()</text>
+        <line x1="20" y1="100" x2="220" y2="100" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="116" font-size="10" fill="var(--text)" font-family="monospace">GetDisk() / GetScreen()</text>
+        <line x1="20" y1="123" x2="220" y2="123" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="139" font-size="10" fill="var(--faint)" font-family="monospace">WMI — System.Management</text>
+      </g>
+
+      <!-- SettingsStorage -->
+      <g>
+        <rect x="20" y="190" width="200" height="90" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="20" y="190" width="200" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="20" y="206" width="200" height="16" fill="var(--bg-card2)"/>
+        <text x="120" y="212" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">SettingsStorage</text>
+        <line x1="20" y1="222" x2="220" y2="222" stroke="var(--border2)" stroke-width="1"/>
+        <text x="32" y="240" font-size="10" fill="var(--text)" font-family="monospace">AppSettings (JSON)</text>
+        <line x1="20" y1="247" x2="220" y2="247" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="263" font-size="10" fill="var(--faint)" font-family="monospace">Load / Save / EnsureCode</text>
+      </g>
+
+      <!-- Fenêtres secondaires -->
+      <g>
+        <rect x="640" y="20" width="200" height="150" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="640" y="20" width="200" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="640" y="36" width="200" height="16" fill="var(--bg-card2)"/>
+        <text x="740" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">Fenêtres secondaires</text>
+        <line x1="640" y1="52" x2="840" y2="52" stroke="var(--border2)" stroke-width="1"/>
+        <text x="652" y="70" font-size="10" fill="var(--text)" font-family="monospace">SettingsWindow</text>
+        <line x1="640" y1="77" x2="840" y2="77" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="652" y="93" font-size="10" fill="var(--text)" font-family="monospace">CodeWindow</text>
+        <line x1="640" y1="100" x2="840" y2="100" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="652" y="116" font-size="10" fill="var(--text)" font-family="monospace">ChangeCodeWindow</text>
+        <line x1="640" y1="123" x2="840" y2="123" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="652" y="139" font-size="10" fill="var(--text)" font-family="monospace">ImagesWindow</text>
+        <line x1="640" y1="146" x2="840" y2="146" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="652" y="161" font-size="10" fill="var(--faint)" font-family="monospace">Drag &amp; drop médias</text>
+      </g>
+
+      <!-- Flèches -->
+      <path d="M 220 75 L 310 75" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr2)"/>
+      <text x="235" y="68" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">lecture</text>
+
+      <path d="M 220 235 Q 265 235 265 140 L 310 140" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr2)"/>
+      <text x="228" y="228" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">JSON</text>
+
+      <path d="M 550 75 L 640 75" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr2)"/>
+      <text x="565" y="68" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">ouvre</text>
+    </svg>
+  </div>
+
+  <!-- ── DIFFICULTÉS ───────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Difficultés rencontrées &amp; solutions</h2>
+  <div class="proj-challenges">
+
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p>Le logiciel devait fonctionner sur n'importe quelle résolution d'écran sans code en dur — certains PC magasin étant en Full HD, d'autres en 4K.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Layout entièrement en proportions relatives (<code>Grid *</code>, <code>ColumnDefinition Width="2*"</code>), sans aucune taille fixe en pixels dans le layout principal. S'adapte automatiquement à toute résolution.</p>
+    </div>
+
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p>WPF ne supporte pas nativement les fichiers SVG — impossible d'afficher le logo Easy Cash via <code>&lt;Image Source="logo.svg"&gt;</code>.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Extraction du <code>path d="..."</code> du SVG et conversion en <code>&lt;Canvas&gt; + &lt;Path&gt;</code> XAML natif encapsulé dans un <code>&lt;Viewbox&gt;</code>. Rendu vectoriel parfait à toute taille, sans dépendance externe.</p>
+    </div>
+
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p>Le diaporama se relançait après que l'utilisateur avait bougé la souris, car le timer d'inactivité repartait mais ne prenait pas en compte les mouvements continus.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Centralisation dans un handler <code>OnMouseActivity</code> unique, branché sur <code>MouseMove</code> : arrêt immédiat du diaporama, reset du timer d'inactivité et masquage de l'overlay en une seule méthode atomique.</p>
+    </div>
+
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p>Les noms de fichiers des logos contenaient des accents et caractères spéciaux (<code>Testé &amp; controlé.png</code>), causant des erreurs MSBuild lors de la compilation.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Renommage systématique en noms normalisés (<code>logo_teste.png</code>, <code>logo_sav.png</code>…) avec mise à jour du <code>.csproj</code> et du code C# en conséquence.</p>
+    </div>
+
+  </div>
+
+</div>

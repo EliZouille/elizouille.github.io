@@ -1,0 +1,589 @@
+<div class="page-wrap proj-detail-wrap">
+
+  <!-- ── RETOUR ─────────────────────────────────────────────────────── -->
+  <div class="proj-detail-back">
+    <button class="btn btn-outline btn-sm" onclick="history.pushState({page:'projets'},'','#projets'); loadPage('projets')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Retour aux projets
+    </button>
+  </div>
+
+  <!-- ── HERO (dans le thème portfolio) ───────────────────────────── -->
+  <div class="proj-detail-hero">
+    <div class="proj-detail-hero-top">
+      <div class="proj-detail-tags">
+        <span class="ptag">PHP 8.2</span>
+        <span class="ptag">MySQL</span>
+        <span class="ptag">HTML / CSS</span>
+        <span class="ptag">PDO</span>
+        <span class="ptag">WAMP</span>
+      </div>
+      <span class="proj-detail-year">2024 — 2025</span>
+    </div>
+    <h1 class="proj-detail-title">Or-fée</h1>
+    <p class="proj-detail-subtitle">Site marchand de bijouterie en ligne</p>
+    <p class="proj-detail-desc">
+      Application web e-commerce complète : refonte totale d'un site existant avec architecture propre,
+      base de données normalisée, panier persistant, favoris et historique de commandes par compte.
+      Projet réalisé dans le cadre du BTS SIO option SLAM.
+    </p>
+    <div class="proj-detail-meta-row">
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        2024 — 2025
+      </div>
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        Projet individuel
+      </div>
+      <div class="proj-detail-meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        BTS SIO — SLAM
+      </div>
+    </div>
+  </div>
+
+  <!-- ── APERÇUS ───────────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Aperçu du site</h2>
+
+  <!-- Screen 1 : Accueil pleine largeur -->
+  <div class="proj-screen proj-screen--wide" style="margin-bottom:1rem">
+    <div class="proj-screen-bar">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">localhost/orfee_site/orfee/index.php</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="screen-accueil">
+      <!-- nav -->
+      <div class="screen-nav">
+        <div class="screen-nav-logo">
+          <div class="screen-logo-circle"></div>
+          <span>Or-fée</span>
+        </div>
+        <div class="screen-nav-links">
+          <span>Accueil</span><span>Bagues</span><span>Bracelets</span><span>Colliers</span><span>Boucles d'oreilles</span>
+        </div>
+        <div class="screen-nav-icons">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+      </div>
+      <!-- hero -->
+      <div class="screen-hero">
+        <div class="screen-hero-inner">
+          <p class="screen-hero-title">Transformez vos instants en féerie avec Or-fée.</p>
+          <div class="screen-hero-btn">Découvrir la collection</div>
+        </div>
+      </div>
+      <!-- welcome -->
+      <div class="screen-welcome">
+        <div class="screen-section-title">Bienvenue chez Or-fée</div>
+        <div class="screen-text-lines">
+          <div class="screen-line w100"></div>
+          <div class="screen-line w90"></div>
+          <div class="screen-line w80"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mock-label">Page d'accueil — Navigation sombre + Hero + section Bienvenue</div>
+  </div>
+
+  <div class="proj-screens-grid" style="margin-bottom:2.5rem">
+    <!-- Screen 2 : Catalogue -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">/catalogue.php</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-catalogue">
+        <div class="screen-page-banner">
+          <div class="screen-banner-title">Tous nos bijoux</div>
+        </div>
+        <div class="screen-catalogue-body">
+          <div class="screen-cat-label">Alliances</div>
+          <div class="screen-prod-grid">
+            <div class="screen-prod-card">
+              <div class="screen-prod-img"></div>
+              <div class="screen-prod-info">
+                <div class="screen-line w80"></div>
+                <div class="screen-line w50 gold"></div>
+                <div class="screen-prod-actions">
+                  <div class="screen-btn-add">+ Ajouter</div>
+                  <div class="screen-btn-heart">♡</div>
+                </div>
+              </div>
+            </div>
+            <div class="screen-prod-card">
+              <div class="screen-prod-img"></div>
+              <div class="screen-prod-info">
+                <div class="screen-line w90"></div>
+                <div class="screen-line w50 gold"></div>
+                <div class="screen-prod-actions">
+                  <div class="screen-btn-add">+ Ajouter</div>
+                  <div class="screen-btn-heart">♡</div>
+                </div>
+              </div>
+            </div>
+            <div class="screen-prod-card">
+              <div class="screen-prod-img"></div>
+              <div class="screen-prod-info">
+                <div class="screen-line w70"></div>
+                <div class="screen-line w50 gold"></div>
+                <div class="screen-prod-actions">
+                  <div class="screen-btn-add">+ Ajouter</div>
+                  <div class="screen-btn-heart active">♥</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-label">Catalogue — Grille produits avec favoris</div>
+    </div>
+
+    <!-- Screen 3 : Panier -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">/panier.php</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-panier">
+        <div class="screen-page-banner">
+          <div class="screen-banner-title">Mon Panier</div>
+        </div>
+        <div class="screen-panier-body">
+          <div class="screen-panier-table">
+            <div class="screen-panier-header">
+              <span>Produit</span><span>Prix</span><span>Qté</span><span>Total</span>
+            </div>
+            <div class="screen-panier-row">
+              <div class="screen-panier-thumb"></div>
+              <div class="screen-panier-name">
+                <div class="screen-line w90"></div>
+                <div class="screen-line w60"></div>
+              </div>
+              <div class="screen-panier-price gold-text">230,00 €</div>
+              <div class="screen-panier-qty">1</div>
+              <div class="screen-panier-price gold-text">230,00 €</div>
+            </div>
+            <div class="screen-panier-row">
+              <div class="screen-panier-thumb"></div>
+              <div class="screen-panier-name">
+                <div class="screen-line w80"></div>
+                <div class="screen-line w50"></div>
+              </div>
+              <div class="screen-panier-price gold-text">119,00 €</div>
+              <div class="screen-panier-qty">2</div>
+              <div class="screen-panier-price gold-text">238,00 €</div>
+            </div>
+          </div>
+          <div class="screen-panier-recap">
+            <div class="screen-recap-title">Récapitulatif</div>
+            <div class="screen-recap-line"><span>Sous-total</span><span class="gold-text">468,00 €</span></div>
+            <div class="screen-recap-line"><span>Livraison</span><span>Gratuite</span></div>
+            <div class="screen-recap-total"><span>Total</span><span class="gold-text">468,00 €</span></div>
+            <div class="screen-checkout-btn">Passer la commande</div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-label">Panier — Persistant en BDD + récapitulatif</div>
+    </div>
+
+    <!-- Screen 4 : Compte -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">/compte.php</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-compte">
+        <div class="screen-page-banner">
+          <div class="screen-banner-title">Mon Compte</div>
+        </div>
+        <div class="screen-compte-body">
+          <div class="screen-compte-tabs">
+            <span class="active">Mes informations</span>
+            <span>Mes commandes</span>
+            <span>Mes favoris</span>
+          </div>
+          <div class="screen-info-grid">
+            <div class="screen-info-row"><span class="screen-info-key">Nom</span><span class="screen-info-val">MICHEL</span></div>
+            <div class="screen-info-row"><span class="screen-info-key">Prénom</span><span class="screen-info-val">Elisa</span></div>
+            <div class="screen-info-row"><span class="screen-info-key">Email</span><span class="screen-info-val">elisa@demo.fr</span></div>
+            <div class="screen-info-row"><span class="screen-info-key">Adresse</span><span class="screen-info-val">12 rue des Lilas</span></div>
+          </div>
+          <div class="screen-logout-btn">Se déconnecter</div>
+        </div>
+      </div>
+      <div class="mock-label">Compte — Infos / Commandes / Favoris</div>
+    </div>
+
+    <!-- Screen 5 : Commandes -->
+    <div class="proj-screen">
+      <div class="proj-screen-bar">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:0 8px;">
+          <div style="display:flex;align-items:center;gap:6px;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#9AA3B2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span class="proj-screen-url">/compte.php → Mes commandes</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;">
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="1" viewBox="0 0 7 1"><rect width="7" height="1" fill="#9AA3B2"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;display:flex;align-items:center;justify-content:center;">
+              <svg width="6" height="6" viewBox="0 0 6 6"><rect width="6" height="6" fill="none" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+            <div style="width:11px;height:11px;border:1px solid #D0D5E0;background:#E8EBF0;display:flex;align-items:center;justify-content:center;">
+              <svg width="7" height="7" viewBox="0 0 7 7"><line x1="0" y1="0" x2="7" y2="7" stroke="#9AA3B2" stroke-width="1"/><line x1="7" y1="0" x2="0" y2="7" stroke="#9AA3B2" stroke-width="1"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-compte">
+        <div class="screen-page-banner">
+          <div class="screen-banner-title">Mon Compte</div>
+        </div>
+        <div class="screen-compte-body">
+          <div class="screen-compte-tabs">
+            <span>Mes informations</span>
+            <span class="active">Mes commandes</span>
+            <span>Mes favoris</span>
+          </div>
+          <div class="screen-commandes">
+            <div class="screen-cmd">
+              <div class="screen-cmd-header">
+                <span class="screen-cmd-id">#1</span>
+                <span class="screen-cmd-date">01/06/2026</span>
+                <span class="screen-cmd-badge livree">Livrée</span>
+                <span class="gold-text">468,00 €</span>
+              </div>
+              <div class="screen-cmd-detail">
+                <div class="screen-line w80"></div>
+                <div class="screen-line w60"></div>
+              </div>
+            </div>
+            <div class="screen-cmd">
+              <div class="screen-cmd-header">
+                <span class="screen-cmd-id">#2</span>
+                <span class="screen-cmd-date">15/05/2026</span>
+                <span class="screen-cmd-badge attente">En attente</span>
+                <span class="gold-text">230,00 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-label">Historique des commandes par compte</div>
+    </div>
+  </div>
+
+  <!-- ── FONCTIONNALITÉS ───────────────────────────────────────────── -->
+  <h2 class="subsection-title">Fonctionnalités développées</h2>
+  <div class="proj-features-grid" style="margin-bottom:2.5rem">
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-cyan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </div>
+      <div>
+        <h3>Panier persistant</h3>
+        <p>BDD si connecté, session sinon. Fusion automatique à la connexion.</p>
+      </div>
+    </div>
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-red">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <div>
+        <h3>Favoris</h3>
+        <p>Toggle par article. Redirige vers connexion si non authentifié.</p>
+      </div>
+    </div>
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-green">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div>
+        <h3>Historique commandes</h3>
+        <p>Passage de commande + détail complet accessible par compte.</p>
+      </div>
+    </div>
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-yellow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <div>
+        <h3>Auth sécurisée</h3>
+        <p><code>password_hash</code> bcrypt, <code>session_regenerate_id</code>, PDO préparées.</p>
+      </div>
+    </div>
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-purple">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+      </div>
+      <div>
+        <h3>BDD normalisée</h3>
+        <p>12 tables séparées → 6 tables unifiées avec clés étrangères.</p>
+      </div>
+    </div>
+    <div class="proj-feature">
+      <div class="proj-feature-icon feat-cyan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      </div>
+      <div>
+        <h3>Architecture propre</h3>
+        <p><code>includes/</code> centralisé, <code>actions/</code> pour les POST, zéro duplication.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STACK ─────────────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Stack technique</h2>
+  <div class="proj-stack-grid" style="margin-bottom:2.5rem">
+    <div class="proj-stack-card">
+      <div class="proj-stack-head">Front-end</div>
+      <ul class="proj-stack-list">
+        <li><span class="comp-code">HTML5</span> Structure sémantique</li>
+        <li><span class="comp-code">CSS3</span> Variables, Flexbox, Grid</li>
+        <li><span class="comp-code">JS</span> Burger, tabs, quantité auto</li>
+        <li><span class="comp-code">Responsive</span> 700 / 900 px</li>
+      </ul>
+    </div>
+    <div class="proj-stack-card">
+      <div class="proj-stack-head">Back-end</div>
+      <ul class="proj-stack-list">
+        <li><span class="comp-code">PHP 8.2</span> Architecture fonctionnelle</li>
+        <li><span class="comp-code">PDO</span> Requêtes préparées</li>
+        <li><span class="comp-code">Sessions</span> Panier visiteur + fusion</li>
+        <li><span class="comp-code">Sécurité</span> XSS, CSRF-ready</li>
+      </ul>
+    </div>
+    <div class="proj-stack-card">
+      <div class="proj-stack-head">Base de données</div>
+      <ul class="proj-stack-list">
+        <li><span class="comp-code">MySQL</span> InnoDB, utf8mb4</li>
+        <li><span class="comp-code">6 tables</span> normalisées</li>
+        <li><span class="comp-code">FK</span> ON DELETE CASCADE</li>
+        <li><span class="comp-code">WAMP</span> Apache 2.4 + PHP 8.2</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── SCHÉMA BDD ────────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Schéma de la base de données</h2>
+  <div class="bdd-schema-wrap" style="margin-bottom:2.5rem">
+    <svg class="bdd-svg" viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg">
+      <!-- ── Définitions ── -->
+      <defs>
+        <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L0,6 L8,3 z" fill="var(--cyan)"/>
+        </marker>
+      </defs>
+
+      <!-- ══ TABLE clients (x=20) ══ -->
+      <g>
+        <rect x="20" y="60" width="160" height="180" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="20" y="60" width="160" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="20" y="76" width="160" height="16" fill="var(--bg-card2)"/><!-- carré bas header -->
+        <text x="100" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">CLIENTS</text>
+        <!-- lignes -->
+        <line x1="20" y1="92" x2="180" y2="92" stroke="var(--border2)" stroke-width="1"/>
+        <text x="32" y="110" font-size="10" fill="#fbbf24" font-family="monospace">🔑 id</text>
+        <line x1="20" y1="118" x2="180" y2="118" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="133" font-size="10" fill="var(--text)" font-family="monospace">nom, prenom</text>
+        <line x1="20" y1="140" x2="180" y2="140" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="155" font-size="10" fill="var(--text)" font-family="monospace">email</text>
+        <line x1="20" y1="162" x2="180" y2="162" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="177" font-size="10" fill="var(--text)" font-family="monospace">password (bcrypt)</text>
+        <line x1="20" y1="184" x2="180" y2="184" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="199" font-size="10" fill="var(--faint)" font-family="monospace">adresse, ddn...</text>
+        <line x1="20" y1="206" x2="180" y2="206" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="32" y="226" font-size="9" fill="var(--faint)" font-family="monospace">created_at</text>
+      </g>
+
+      <!-- ══ TABLE produits (x=340 centre) ══ -->
+      <g>
+        <rect x="330" y="30" width="170" height="180" rx="8" fill="var(--bg-card)" stroke="var(--cyan)" stroke-width="2"/>
+        <rect x="330" y="30" width="170" height="32" rx="8" fill="var(--cyan-10)"/>
+        <rect x="330" y="46" width="170" height="16" fill="var(--cyan-10)"/>
+        <text x="415" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">PRODUITS</text>
+        <line x1="330" y1="62" x2="500" y2="62" stroke="var(--cyan-b)" stroke-width="1"/>
+        <text x="342" y="80" font-size="10" fill="#fbbf24" font-family="monospace">🔑 id</text>
+        <line x1="330" y1="87" x2="500" y2="87" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="103" font-size="10" fill="var(--cyan)" font-family="monospace">🔗 categorie_id</text>
+        <line x1="330" y1="110" x2="500" y2="110" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="126" font-size="10" fill="var(--text)" font-family="monospace">nom, prix</text>
+        <line x1="330" y1="133" x2="500" y2="133" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="149" font-size="10" fill="var(--text)" font-family="monospace">image</text>
+        <line x1="330" y1="156" x2="500" y2="156" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="172" font-size="10" fill="var(--faint)" font-family="monospace">stock, actif</text>
+        <line x1="330" y1="179" x2="500" y2="179" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="196" font-size="9" fill="var(--faint)" font-family="monospace">created_at</text>
+      </g>
+
+      <!-- ══ TABLE categories (x=340, y=260) ══ -->
+      <g>
+        <rect x="330" y="250" width="170" height="130" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="330" y="250" width="170" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="330" y="266" width="170" height="16" fill="var(--bg-card2)"/>
+        <text x="415" y="272" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">CATEGORIES</text>
+        <line x1="330" y1="282" x2="500" y2="282" stroke="var(--border2)" stroke-width="1"/>
+        <text x="342" y="300" font-size="10" fill="#fbbf24" font-family="monospace">🔑 id</text>
+        <line x1="330" y1="307" x2="500" y2="307" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="323" font-size="10" fill="var(--text)" font-family="monospace">slug, nom</text>
+        <line x1="330" y1="330" x2="500" y2="330" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="342" y="356" font-size="10" fill="var(--faint)" font-family="monospace">parent_slug</text>
+      </g>
+
+      <!-- ══ TABLE panier (droite haute) ══ -->
+      <g>
+        <rect x="660" y="20" width="165" height="130" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="660" y="20" width="165" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="660" y="36" width="165" height="16" fill="var(--bg-card2)"/>
+        <text x="742" y="42" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">PANIER</text>
+        <line x1="660" y1="52" x2="825" y2="52" stroke="var(--border2)" stroke-width="1"/>
+        <text x="672" y="70" font-size="10" fill="var(--cyan)" font-family="monospace">🔗 client_id</text>
+        <line x1="660" y1="77" x2="825" y2="77" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="93" font-size="10" fill="var(--cyan)" font-family="monospace">🔗 produit_id</text>
+        <line x1="660" y1="100" x2="825" y2="100" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="116" font-size="10" fill="var(--text)" font-family="monospace">quantite</text>
+        <line x1="660" y1="123" x2="825" y2="123" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="139" font-size="9" fill="var(--faint)" font-family="monospace">added_at</text>
+      </g>
+
+      <!-- ══ TABLE favoris ══ -->
+      <g>
+        <rect x="660" y="175" width="165" height="115" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="660" y="175" width="165" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="660" y="191" width="165" height="16" fill="var(--bg-card2)"/>
+        <text x="742" y="197" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">FAVORIS</text>
+        <line x1="660" y1="207" x2="825" y2="207" stroke="var(--border2)" stroke-width="1"/>
+        <text x="672" y="225" font-size="10" fill="var(--cyan)" font-family="monospace">🔗 client_id</text>
+        <line x1="660" y1="232" x2="825" y2="232" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="248" font-size="10" fill="var(--cyan)" font-family="monospace">🔗 produit_id</text>
+        <line x1="660" y1="255" x2="825" y2="255" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="275" font-size="9" fill="var(--faint)" font-family="monospace">added_at</text>
+      </g>
+
+      <!-- ══ TABLE commandes ══ -->
+      <g>
+        <rect x="660" y="315" width="165" height="130" rx="8" fill="var(--bg-card)" stroke="var(--border2)" stroke-width="1.5"/>
+        <rect x="660" y="315" width="165" height="32" rx="8" fill="var(--bg-card2)"/>
+        <rect x="660" y="331" width="165" height="16" fill="var(--bg-card2)"/>
+        <text x="742" y="337" text-anchor="middle" font-size="11" font-weight="700" fill="var(--cyan)" font-family="monospace" letter-spacing="1">COMMANDES</text>
+        <line x1="660" y1="347" x2="825" y2="347" stroke="var(--border2)" stroke-width="1"/>
+        <text x="672" y="365" font-size="10" fill="#fbbf24" font-family="monospace">🔑 id</text>
+        <line x1="660" y1="372" x2="825" y2="372" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="388" font-size="10" fill="var(--cyan)" font-family="monospace">🔗 client_id</text>
+        <line x1="660" y1="395" x2="825" y2="395" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="411" font-size="10" fill="var(--text)" font-family="monospace">total, statut</text>
+        <line x1="660" y1="418" x2="825" y2="418" stroke="var(--border2)" stroke-width=".5"/>
+        <text x="672" y="436" font-size="9" fill="var(--faint)" font-family="monospace">adresse_liv</text>
+      </g>
+
+      <!-- ══ FLÈCHES ══ -->
+      <!-- clients → panier (client_id) -->
+      <path d="M 180 110 Q 270 110 270 55 Q 270 35 660 35" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+      <!-- clients → favoris (client_id) -->
+      <path d="M 180 150 Q 280 150 280 192 Q 280 192 660 192" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+      <!-- clients → commandes (client_id) -->
+      <path d="M 180 200 Q 300 200 300 380 Q 300 380 660 380" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+      <!-- produits → panier (produit_id) -->
+      <path d="M 500 90 Q 580 90 580 90 Q 580 90 660 90" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+      <!-- produits → favoris (produit_id) -->
+      <path d="M 500 120 Q 590 120 590 245 Q 590 245 660 245" stroke="var(--cyan)" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+      <!-- categories → produits (categorie_id) -->
+      <path d="M 415 250 L 415 210" stroke="var(--cyan)" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
+
+      <!-- Labels flèches -->
+      <text x="218" y="102" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">1→N</text>
+      <text x="218" y="143" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">1→N</text>
+      <text x="218" y="195" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">1→N</text>
+      <text x="510" y="83" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">1→N</text>
+      <text x="510" y="113" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">1→N</text>
+      <text x="420" y="237" font-size="8" fill="var(--cyan)" font-family="monospace" opacity=".8">1→N</text>
+    </svg>
+  </div>
+
+  <!-- ── DIFFICULTÉS ───────────────────────────────────────────────── -->
+  <h2 class="subsection-title">Difficultés rencontrées & solutions</h2>
+  <div class="proj-challenges">
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p>Base de données fragmentée : une table par type de bijou (<code>alliance</code>, <code>clou</code>…), rendant toute requête multi-catégorie impossible.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Refonte en table unique <code>produits</code> + <code>categories</code> hiérarchique avec <code>parent_slug</code>, permettant de requêter n'importe quelle combinaison.</p>
+    </div>
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p>Panier uniquement en <code>$_SESSION</code> : perdu à la fermeture du navigateur, non partageable entre appareils.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Panier persistant en BDD pour les comptes + session pour les visiteurs, avec fusion automatique <code>mergePanierSession()</code> à la connexion.</p>
+    </div>
+    <div class="proj-challenge">
+      <div class="proj-challenge-badge problem">Problème</div>
+      <p><code>SITE_URL</code> codé en dur causait une erreur 500 immédiate sur WAMP selon l'emplacement du dossier.</p>
+      <div class="proj-challenge-badge solution">Solution</div>
+      <p>Auto-détection dynamique via <code>$_SERVER['DOCUMENT_ROOT']</code> — fonctionne quel que soit l'emplacement dans le serveur.</p>
+    </div>
+  </div>
+
+</div>
